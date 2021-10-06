@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <title>Oclock</title>
+  </head>
+  <body >
+
+    <svg style="display: none;">
+        <symbol id='moon' viewBox="0 0 312.812 312.812">
+            <g>
+                <path d="M305.2,178.159c-3.2-0.8-6.4,0-9.2,2c-10.4,8.8-22.4,16-35.6,20.8c-12.4,4.8-26,7.2-40.4,7.2c-32.4,0-62-13.2-83.2-34.4
+                    c-21.2-21.2-34.4-50.8-34.4-83.2c0-13.6,2.4-26.8,6.4-38.8c4.4-12.8,10.8-24.4,19.2-34.4c3.6-4.4,2.8-10.8-1.6-14.4
+                    c-2.8-2-6-2.8-9.2-2c-34,9.2-63.6,29.6-84.8,56.8c-20.4,26.8-32.4,60-32.4,96c0,43.6,17.6,83.2,46.4,112s68,46.4,112,46.4
+                    c36.8,0,70.8-12.8,98-34c27.6-21.6,47.6-52.4,56-87.6C314,184.959,310.8,179.359,305.2,178.159z"/>
+            </g>
+        </symbol>
+        <symbol id='sun' viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M255.996,106c-82.705,0-150,67.295-150,150s67.295,150,150,150s150-67.295,150-150S338.701,106,255.996,106z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M411.696,346c-15.6,27.299-38.699,50.099-66,66l90.3,24.3L411.696,346z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M255.996,0l-46.199,82.299C224.497,78.1,240.095,76,255.996,76s31.5,2.1,46.2,6.299L255.996,0z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M75.996,76l24.3,90c15.601-27.301,38.101-49.801,65.4-65.7L75.996,76z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M82.297,209.5l-82,46.5l82,46.5c-4.2-14.7-6.301-30.3-6.301-46.5C75.996,239.799,78.096,224.2,82.297,209.5z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M100.296,346l-24.3,90.3l90.3-24.3C138.996,396.099,115.897,373.299,100.296,346z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M255.996,436c-16.199,0-31.8-2.1-46.8-6.301l46.8,82.301l46.8-82.301C287.796,433.899,272.195,436,255.996,436z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M346.159,100.452c27.14,15.795,49.756,38.43,65.514,65.596l24.426-90.004L346.159,100.452z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M511.703,256.146l-81.951-46.39c3.941,14.786,6.244,30.233,6.244,46.244c0,16.135-2.333,31.703-6.334,46.593
+                        L511.703,256.146z"/>
+                </g>
+            </g>
+        </symbol>
+    </svg>
+
+    <div class="main">
+      <div class="container ">
+        
+        <div class="icons">
+          <div class="icon ic-moon">
+              <svg class="svg">
+                  <use xlink:href="#moon"> </use>
+              </svg>
+          </div>
+          <div class="icon ic-sun">
+            <svg class="svg">
+                <use xlink:href="#sun"> </use>
+            </svg>
+          </div>
+        </div>
+        <div class="time">
+          <div class="time__item">
+            <div class="num num-hour">12</div>
+            <span class="num_text">Hour</span>
+          </div>
+          <span class="text">:</span>
+          <div class="time__item">
+            <div class="num num-min">41</div>
+            <span class="num_text">Minutes</span>
+          </div>
+          <span class="text">:</span>
+          <div class="time__item">
+            <div class="num num-sec">36</div>
+            <span class="num_text">Seconds</span>
+          </div>
+          <div class="AM-PM">AM</div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
